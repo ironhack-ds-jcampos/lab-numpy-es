@@ -96,7 +96,6 @@ f[(d > d_mean) & (d < d_max)] = 75
 f[(d == d_mean)] = 50
 f[d == d_min] = 0
 f[d == d_max] = 100
-print(f)
 
 
 
@@ -121,9 +120,7 @@ array([[[ 75.,  75.,  75.,  25.,  75.],
         [ 25.,  75.,   0.,  75.,  75.]]])
 """
 
-#[tu código aquí]
-
-
+print(f)
 
 """
 #18. Pregunta de bonificación: en lugar de usar números (es decir, 0, 25, 50, 75 y 100), ¿cómo usar valores de cadena 
