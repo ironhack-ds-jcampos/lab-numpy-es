@@ -67,13 +67,13 @@ print(eq)
 
 #14. Identifica los valores máximos, mínimos y medios en d. Asigna esos valores a las variables "d_max", "d_min" y "d_mean"
 
-max = np.max(d)
-min = np.min(d)
-mean = np.mean(d)
+d_max = np.max(d)
+d_min = np.min(d)
+d_mean = np.mean(d)
 
-print(max)
-print(min)
-print(mean)
+print(d_max)
+print(d_min)
+print(d_mean)
 
 
 #15. Ahora queremos etiquetar los valores en d. Primero crea un array vacío "f" con la misma forma (es decir, 2x3x5) que d usando `np.empty`.
@@ -91,8 +91,12 @@ Al final, f debería tener solo los siguientes valores: 0, 25, 50, 75 y 100.
 Nota: no necesitas usar Numpy en esta pregunta.
 """
 
-#[tu código aquí]
-
+f[(d > d_min) & (d < d_mean)] = 25
+f[(d > d_mean) & (d < d_max)] = 75
+f[(d == d_mean)] = 50
+f[d == d_min] = 0
+f[d == d_max] = 100
+print(f)
 
 
 
