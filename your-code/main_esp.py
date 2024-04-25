@@ -1,11 +1,10 @@
 #1. Importa el paquete NUMPY bajo el nombre np.
 
-from numpy import np
+from numpy import version, np
 
 #2. Imprime la versión de NUMPY y la configuración.
 
-#[tu código aquí]
-
+print(version.version)
 
 #3. Genera un array tridimensional de 2x3x5 con valores aleatorios. Asigna el array a la variable "a"
 # Desafío: hay al menos tres maneras fáciles que usan numpy para generar arrays aleatorios. ¿Cuántas formas puedes encontrar?
