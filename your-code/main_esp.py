@@ -135,4 +135,12 @@ array([[[ 'D',  'D',  'D',  'B',  'D'],
 De nuevo, no necesitas Numpy en esta pregunta.
 """
 
-#[tu código aquí]
+f = f.astype(str)
+
+f[(d > d_min) & (d < d_mean)] = 'D'
+f[(d > d_mean) & (d < d_max)] = 'B'
+f[(d == d_mean)] = 'C'
+f[d == d_min] = 'E'
+f[d == d_max] = 'A'
+
+print(f)
