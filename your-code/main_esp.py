@@ -32,7 +32,7 @@ print(equal)
 #8. ¿Es posible sumar a y b? ¿Por qué sí o por qué no?
 
 try:
-    sum = np.sum(a,b)
+    sum = a + b
 except:
     print("Error al sumar")
 # No es posible sumar ya que las listas no son iguales
@@ -43,27 +43,37 @@ c = np.transpose(b, (1, 2, 0))
 
 #10. Intenta sumar a y c. Ahora debería funcionar. Asigna la suma a la variable "d". Pero, ¿por qué funciona ahora?
 
-#[tu código aquí]
+d = a + c
 
 #11. Imprime a y d. ¿Notas la diferencia y la relación entre los dos arrays en términos de los valores? Explica.
 
-#[tu código aquí]
+print(a)
+print(d)
+# Se han sumado las posiciones una a una y se han guardado en la misma posición en el array del resultado
 
 
 #12. Multiplica a y c. Asigna el resultado a e.
 
-#[tu código aquí]
+e = a * c
 
 
 #13. ¿Es e igual a a? ¿Por qué sí o por qué no?
 
-#[tu código aquí]
+eq = e == a
+print(eq)
 
+# Sí, ya que todas sus posiciones son idénticas
 
 
 #14. Identifica los valores máximos, mínimos y medios en d. Asigna esos valores a las variables "d_max", "d_min" y "d_mean"
 
-#[tu código aquí]
+max = np.max(d)
+min = np.min(d)
+mean = np.mean(d)
+
+print(max)
+print(min)
+print(mean)
 
 
 #15. Ahora queremos etiquetar los valores en d. Primero crea un array vacío "f" con la misma forma (es decir, 2x3x5) que d usando `np.empty`.
