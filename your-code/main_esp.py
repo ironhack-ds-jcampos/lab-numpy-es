@@ -78,7 +78,7 @@ print(mean)
 
 #15. Ahora queremos etiquetar los valores en d. Primero crea un array vacío "f" con la misma forma (es decir, 2x3x5) que d usando `np.empty`.
 
-#[tu código aquí]
+f = np.empty((2,3,5))
 
 
 """
